@@ -11,9 +11,17 @@ const button = document.getElementById("button");
 button.addEventListener("click", function() {
      const kilometers = input1.value
      const passengerAge = input2.value
-     const KilomersPrice = kilometers * 0.233; 
+     let KilometersPrice = kilometers * 0.233; 
 
-    if
+    if(passengerAge < 18) {
+
+        KilometersPrice = KilometersPrice - (19.4 / 100 * KilometersPrice)
+    } 
+      else if(passengerAge > 65) {
+
+        KilometersPrice = KilometersPrice - (37.7 / 100 * KilometersPrice)
+    }
     
+    console.log(KilometersPrice)
  
 })
