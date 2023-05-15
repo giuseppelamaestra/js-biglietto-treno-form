@@ -22,6 +22,10 @@ button.addEventListener("click", function() {
         KilometersPrice = KilometersPrice - (37.7 / 100 * KilometersPrice)
     }
     
+
+    KilometersPrice = KilometersPrice.toFixed(2)
+     
+
     console.log(KilometersPrice)
  
 })
