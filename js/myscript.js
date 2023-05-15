@@ -27,11 +27,11 @@ button.addEventListener("click", function() {
 
     KilometersPrice = KilometersPrice.toFixed(2)
 
-    console.log(kilometers)
-    console.log(passengerAge)
+   
      
 
-    console.log(KilometersPrice) 
+    const outputElement = document.querySelector('p');
+    outputElement.innerHTML = "This is your final price: " + KilometersPrice + "€";
 
  
 })
